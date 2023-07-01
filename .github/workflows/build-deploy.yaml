@@ -1,0 +1,45 @@
+name: build & deploy
+on:
+  push:
+    branches:
+      - main
+env:
+  AWS_REGION : ap-south-1
+
+permissions:
+      id-token: write   # This is required for requesting the JWT
+      contents: read    # This is required for actions/checkout    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [16.14.1]
+        
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: install node modules 
+      run: |
+        npm ci
+
+    - name: build 
+      run: |
+        npm run build
+
+    - name: configure aws credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        role-to-assume: arn:aws:iam::911598141981:role/github-assume-role 
+        role-session-name: GithubActionsSession
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Deploy to AWS S3
+      run: |
+        npm run deploy-aws 
+
+    - name: CF cache invalidation 
+      run: | 
+        aws cloudfront create-invalidation --distribution-id E2E5WC0VFT2XSB --paths '/*'
