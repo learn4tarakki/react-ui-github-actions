@@ -42,4 +42,4 @@ jobs:
 
     - name: CF cache invalidation 
       run: | 
-        aws cloudfront create-invalidation --distribution-id E2E5WC0VFT2XSB --paths '/*'
+        aws cloudfront create-invalidation --distribution-id E15J5II7HFCTGM --paths '/*'
