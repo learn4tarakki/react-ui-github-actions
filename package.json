@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy-aws": "aws s3 sync dist s3://reneo-webapp-s3"
+    "deploy-aws": "aws s3 sync dist s3://react-vite"
   },
   "dependencies": {
     "react": "^18.2.0",
