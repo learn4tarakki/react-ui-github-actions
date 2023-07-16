@@ -1,7 +1,7 @@
 # React with Vite + Npm + AWS 
 
 # AWS assume role used in deploy.yaml file
-- `github-assume-role` IAM role (arn:aws:iam::362942319756:role/github-assume-role) - This role is created by Anup in his AWS account, check also java-gradle-monorepo repo's readme
+- `github-assume-role` IAM role (arn:aws:iam::362942319756:role/github-assume-role) 
 
 - # Use Github OIDC Provider to AWS, so that Github Actions can access AWS resources. 
 - steps: 
