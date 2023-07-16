@@ -1,7 +1,7 @@
 # Deploy React App with Github Actions to AWS S3 and Cloudfront. 
 
 # Youtube Video, guiding through the process: 
-- https://youtu.be/3Czf9vzZ0jI
+- Channel (@Learn4Tarakki): https://youtu.be/3Czf9vzZ0jI
 
 # LinkedIn Post: 
 - https://www.linkedin.com/posts/anup-g-82510415_deploy-react-app-on-aws-with-github-actions-activity-7081943044618358784-jysc?utm_source=share&utm_medium=member_desktop
