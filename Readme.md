@@ -1,5 +1,11 @@
 # React with Vite + Npm + AWS 
 
+# Youtube Video explaining this repo: 
+- https://youtu.be/3Czf9vzZ0jI
+
+# LinkedIn Post: 
+- https://www.linkedin.com/posts/anup-g-82510415_deploy-react-app-on-aws-with-github-actions-activity-7081943044618358784-jysc?utm_source=share&utm_medium=member_desktop
+
 # AWS assume role used in deploy.yaml file
 - `github-assume-role` IAM role (arn:aws:iam::362942319756:role/github-assume-role) 
 
