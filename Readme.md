@@ -4,12 +4,6 @@
 - `github-assume-role` IAM role (arn:aws:iam::362942319756:role/github-assume-role) - This role is created by Anup in his AWS account, check also java-gradle-monorepo repo's readme
 
 - # Use Github OIDC Provider to AWS, so that Github Actions can access AWS resources. 
-- References: 
-    - https://scalesec.com/blog/oidc-for-github-actions-on-aws/
-    - https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services
-    - https://github.com/aws-actions/amazon-ecr-login
-    - https://github.com/aws-actions/configure-aws-credentials
-    - https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-push.html
 - steps: 
     - first we use aws-actions/configure-aws-credentials github action
     - it ask us to create role in AWS and use this role arn in the action's 'role-to-assume' parameter 
@@ -94,4 +88,9 @@
                     ]
                 }
                 ```
-
+- References: 
+    - https://scalesec.com/blog/oidc-for-github-actions-on-aws/
+    - https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services
+    - https://github.com/aws-actions/amazon-ecr-login
+    - https://github.com/aws-actions/configure-aws-credentials
+    - https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-push.html
