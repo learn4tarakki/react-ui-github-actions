@@ -1,6 +1,6 @@
-# React with Vite + Npm + AWS 
+# Deploy React App with Github Actions to AWS S3 and Cloudfront. 
 
-# Youtube Video explaining this repo: 
+# Youtube Video, guiding through the process: 
 - https://youtu.be/3Czf9vzZ0jI
 
 # LinkedIn Post: 
